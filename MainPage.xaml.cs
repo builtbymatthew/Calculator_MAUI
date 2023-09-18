@@ -27,6 +27,24 @@ namespace CaclulatorMAUI;
     }
 }
 
+    class EasterEgg
+{
+    public static string secretFunction(string numText2)
+    {
+        string strTemp = "EasterEgg";
+        if (numText2 == strTemp)
+        {
+            return "The creator is Matthew Pearson";
+        }
+        else
+        {
+            return "0";
+        }
+    }
+
+
+}
+
 
     public partial class MainPage : ContentPage
     {
