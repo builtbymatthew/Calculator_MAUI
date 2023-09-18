@@ -3,18 +3,89 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CaclulatorMAUI.MainPage">
 
+
     <ScrollView>
+
         <VerticalStackLayout
+            BackgroundColor="SkyBlue"
             Spacing = "10"
+            Padding="60,0" 
             VerticalOptions = "Center">
             <Label
+                TextColor="Magenta" 
                 Text="Calculator"
                 FontSize="32"
                 HorizontalOptions="Center"/>
-            
-            
-            
-            
+            <Entry x:Name="entryNum1"
+                   TextColor="Black"
+                   Placeholder="Enter Number" 
+                   Keyboard="Numeric"
+                   TextChanged="entryNum1_TextChanged" />
+            <Entry x:Name="entryNum2"
+                   TextColor="Black"
+                   Placeholder="Enter Number" 
+                   Keyboard="Numeric"
+                   TextChanged="entryNum2_TextChanged" />
+            <Label x:Name="txtAnswer"
+                   TextColor="Black"
+                   Text="Answer"/>
+            <HorizontalStackLayout
+                Spacing="10">
+                <Button x:Name="btnAdd"
+                    TextColor="Magenta" 
+                    Padding="28,0"
+                    Text="+"
+                    FontSize="50"
+                    Clicked="btnAdd_Clicked"/>
+                <Button x:Name="btnSubtract"
+                    TextColor="Magenta" 
+                    Padding="33,0"
+                    Text="-"
+                    FontSize="50"
+                    Clicked="btnSubtract_Clicked"/>
+                <Button x:Name="btnSquare"
+                    TextColor="Magenta" 
+                    Padding="28,0"
+                    Text="^"
+                    FontSize="50"
+                    Clicked="btnSquare_Clicked"/>
+                <Button x:Name="btnSqrt"
+                    TextColor="Magenta" 
+                    Padding="28,0"
+                    Text="sqrt"
+                    FontSize="50"
+                    Clicked="btnSqrt_Clicked"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout
+                Spacing="10">
+                <Button x:Name="btnMultiply"
+                    TextColor="Magenta" 
+                    Padding="29,0" 
+                    Text="x"
+                    FontSize="50"
+                    Clicked="btnMultiply_Clicked"/>
+            <Button x:Name="btnDivide"
+                    TextColor="Magenta" 
+                    Padding="32,0"
+                    Text="/"
+                    FontSize="50"
+                    Clicked="btnDivide_Clicked"/>
+            <Button x:Name="btnExp"
+                    TextColor="Magenta" 
+                    Padding="30,0"
+                    Text="e"
+                    FontSize="50"
+                    Clicked="btnExp_Clicked"/>
+            <Button x:Name="btnCbrt"
+                    TextColor="Magenta" 
+                    Padding="30,0"
+                    Text="cbrt"
+                    FontSize="50"
+                    Clicked="btnCbrt_Clicked"/>
+            </HorizontalStackLayout>
+
+
+
         </VerticalStackLayout>
     </ScrollView>
 
