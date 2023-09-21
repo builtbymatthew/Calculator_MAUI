@@ -79,12 +79,12 @@
                     Text="e"
                     FontSize="40"
                     Clicked="btnExp_Clicked"/>
-            <Button x:Name="btnCbrt"
+            <Button x:Name="btnRndm"
                     TextColor="Magenta" 
-                    Padding="30,0"
-                    Text="cbrt"
+                    Padding="23,0"
+                    Text="rand"
                     FontSize="40"
-                    Clicked="btnCbrt_Clicked"/>
+                    Clicked="btnRndm_Clicked"/>
             </HorizontalStackLayout>
 
 

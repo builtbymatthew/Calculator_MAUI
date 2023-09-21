@@ -1,9 +1,13 @@
 ﻿
 using System;
 
+
 namespace CaclulatorMAUI;
 
-    class Calculator
+
+
+
+class Calculator
 {
     public static double GetNum(string numText)
     {
@@ -27,26 +31,10 @@ namespace CaclulatorMAUI;
     }
 }
 
-    class EasterEgg
-{
-    public static string secretFunction(string numText2)
-    {
-        string strTemp = "EasterEgg";
-        if (numText2 == strTemp)
-        {
-            return "The creator is Matthew Pearson";
-        }
-        else
-        {
-            return "0";
-        }
-    }
 
 
-}
 
-
-    public partial class MainPage : ContentPage
+public partial class MainPage : ContentPage
     {
         int count = 0;
 
@@ -168,5 +156,49 @@ namespace CaclulatorMAUI;
 
         double ans = System.Math.Cbrt(cbrtNum1);
         txtAnswer.Text = Convert.ToString(ans);
+    }
+
+  
+    
+
+    
+
+    private void btnRndm_Clicked(object sender, EventArgs e)
+    {
+        double randNum1 = Calculator.GetNum(entryNum1.Text);
+        double randNum2 = Calculator.GetNum(entryNum2.Text);
+
+        
+        
+        Random rand = new Random();
+       
+
+        if(randNum1 < randNum2)
+        {
+            double answer = rand.Next((int)randNum1, (int)randNum2);
+
+            if(answer == 12)
+            {
+                txtAnswer.Text = Convert.ToString("Your number is 12, and my name is Matt Pearson");
+            }
+            else
+            {
+                txtAnswer.Text = Convert.ToString(answer);
+            }
+        
+        } 
+        else
+        {
+            double answer = rand.Next((int)randNum2, (int)randNum1);
+            if(answer == 12)
+            {
+                txtAnswer.Text = Convert.ToString("Your number is 12, and my name is Matt Pearson");
+            }
+            else
+            {
+                txtAnswer.Text = Convert.ToString(answer);
+            }
+        }
+        
     }
 }
