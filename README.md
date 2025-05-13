@@ -29,6 +29,6 @@ A simple and colorful calculator built with .NET MAUI 7.0, designed specifically
 ### 🚀 How to Run
 - Clone this repo
 
-- Open in Visual Studio 2022+ with the .NET MAUI workload and .NET 7.0 SDK
+- Open in Visual Studio 2022+ 
 
 - Run the project on Windows (WinUI)
